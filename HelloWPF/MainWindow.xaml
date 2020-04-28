@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="안녕 헬로 월드, WFP" HorizontalAlignment="Center" Margin="186,254,166,0" VerticalAlignment="Center" Width="440" Height="137" Background="#FFD9EEFF" BorderBrush="#FF0025A2" FontWeight="Bold"/>
+        <Button Content="안녕 헬로 월드, WFP" HorizontalAlignment="Center" Margin="186,254,166,28" VerticalAlignment="Center" Width="440" Height="137" Background="#FFD9EEFF" FontWeight="Bold" Click="Button_Click" Foreground="Black" BorderThickness="5">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB3B3FF" Offset="0"/>
+                    <GradientStop Color="#F95A5AFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
 
     </Grid>
 </Window>
